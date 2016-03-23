@@ -2,13 +2,17 @@
 
 This is an example app demonstrating how to use (and deploy) [Django Channels](http://channels.readthedocs.org/en/latest/). It's a simple real-time chat app — like a very, very light-weight Slack. There are a bunch of rooms, and everyone in the same room can chat, in real-time, with each other (using WebSockets).
 
-For a walkthrough of what's going on here, see [my article over on the Heroku blog](https://blog.heroku.com/archives/2016/3/17/in_deep_with_django_channels_the_future_of_real_time_apps_in_django?).
+For a walkthrough of what's going on here, see [Jacob Kaplan-Moss's article over on the Heroku blog](https://blog.heroku.com/archives/2016/3/17/in_deep_with_django_channels_the_future_of_real_time_apps_in_django?).
 
-You can visit [my deployment of the example online](https://django-channels-example.herokuapp.com/), or deploy your own copy to Heroku with this button (which requires a free Heroku account):
+## To deploy to Heroku:
+
+1. Press the Heroku button to deploy the app:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jacobian/channels-example)
 
-**WARNING:** you'll need to scale the `worker` process type up after using the button. Use the Dashboard, or run `heroku ps:scale web=1:free worker=1:free`.
+2. Since Django runs a worker and a web process, scale the `worker` process type up after using the button. Use the Dashboard, or run `heroku ps:scale web=1:free worker=1:free`.
+
+
 
 ## Running locally
 

@@ -6,11 +6,11 @@ For a walkthrough of what's going on here, see [Jacob Kaplan-Moss's article over
 
 ## To deploy to Heroku:
 
-1. Press the Heroku button to deploy the app:
+* Press the Heroku button to deploy the app:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jacobian/channels-example)
 
-2. Since Django runs a worker and a web process, scale the `worker` process type up after using the button. Use the Dashboard, or run `heroku ps:scale web=1:free worker=1:free`.
+* Since Django runs a worker and a web process, scale the `worker` process type up after using the button. Use the Dashboard, or run `heroku ps:scale web=1:free worker=1:free`.
 
 
 

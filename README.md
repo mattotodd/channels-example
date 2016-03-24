@@ -1,27 +1,22 @@
-# Django Channels Example 
+# Try out Django Channels today! 
 
 This is an example app demonstrating how to use (and deploy) [Django Channels](http://channels.readthedocs.org/en/latest/). It's a simple real-time chat app — like a very, very light-weight Slack. There are a bunch of rooms, and everyone in the same room can chat, in real-time, with each other (using WebSockets).
 
-For a walkthrough of what's going on here, see [Jacob Kaplan-Moss's article over on the Heroku blog](https://blog.heroku.com/archives/2016/3/17/in_deep_with_django_channels_the_future_of_real_time_apps_in_django?).
 
 ## To deploy to Heroku:
 
-* Press the Heroku button to deploy the app:
+First, press the Heroku button to deploy the app:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jacobian/channels-example)
 
-* Since Django runs a worker and a web process, scale the `worker` process type up after using the button. Use the Dashboard, or run `heroku ps:scale web=1:free worker=1:free`.
+Once the app finishes deploying, press *Manage App*, and turn on the worker dyno:
 
+[![Deploy](https://www.dropbox.com/s/tt8ie7qirx38a61/Screenshot%202016-03-23%2012.23.19.png)]
 
+Then you're ready to go! Come back to our booth, show us your app, and we'll give you a brand new pair of limited-edition Heroku socks.
 
-## Running locally
+## Further Reading
 
-To run this app locally, you'll need Python, Postgres, and Redis. (On my Mac, I installed [Postgres.app](http://postgresapp.com/documentation/) and Redis from Homebrew (`brew install redis`).)
+For a walkthrough of what's going on here, see [Jacob Kaplan-Moss's article over on the Heroku blog](https://blog.heroku.com/archives/2016/3/17/in_deep_with_django_channels_the_future_of_real_time_apps_in_django?).
 
-Then, to run:
-
-- Install requirements: `pip install -r requirements.txt` (you almost certainly want to do this in a virtualenv).
-- Migrate: `DATABASE_URL=postgres:///... python manage.py migrate`
-- If you use [heroku local](https://devcenter.heroku.com/articles/heroku-local), or [foreman](https://github.com/ddollar/foreman)/[forego](https://github.com/ddollar/forego), edit `.env` to add `DATABASE_URL` and `REDIS_URL`, then start `heroku local`/`foreman`/`forego`.
-- Or, to run locally with `runserver`, set `DATABASE_URL` and `REDIS_URL` in your environ, then run `python manage.py runserver`.
-- Or, to run locally with multiple proceses by setting the environ, then running the two commands (`daphne` and `runworker`) as shown in the `Procfile`.
+To get a walkthrough of how to run this app locally, see [Jacob's original GitHub repo](https://github.com/jacobian/channels-example).

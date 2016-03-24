@@ -9,11 +9,14 @@ First, press the Heroku button to deploy the app:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jacobian/channels-example)
 
-Once the app finishes deploying, press *Manage App*, and turn on the worker dyno:
+Once the app [finishes deploying](Screenshot 2016-03-23 12.23.19.png), press *Manage App*, and turn on the worker dyno by pressing the pencil icon and toggling the **on** switch:
 
-[![Deploy](https://www.dropbox.com/s/tt8ie7qirx38a61/Screenshot%202016-03-23%2012.23.19.png)]
+![Edit](Screenshot 2016-03-24 13.25.26.png)
+![Turn on and confirm](Screenshot 2016-03-24 13.25.46.png)
+![Turn on](Screenshot 2016-03-24 13.25.54.png)
+![Confirm](Screenshot 2016-03-24 13.26.03.png)
 
-Then you're ready to go! Come back to our booth, show us your app, and we'll give you a brand new pair of limited-edition Heroku socks.
+Then you're ready to use the app! You can press the *Open App* button on your Heroku dashboard, and make your own chatroom. For DjangoCon attendees, now you can come back to our booth, show us your app, and we'll give you a brand new pair of limited-edition Heroku socks.
 
 ## Further Reading
 

@@ -4,8 +4,7 @@
     "repository": "https://github.com/jacobian/channels-example",
     "keywords": ["django", "channels", "websockets"],
     "scripts": {
-        "postdeploy": ["python manage.py migrate",
-        "heroku ps:scale web=1:free worker=1:free"]
+        "postdeploy": "python manage.py migrate\nheroku ps:scale web=1:free worker=1:free"
     },
     "env": {
         "SECRET_KEY": {

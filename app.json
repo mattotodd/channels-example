@@ -14,4 +14,3 @@
     },
     "addons": ["heroku-postgresql", "heroku-redis"]
 }
-asdf

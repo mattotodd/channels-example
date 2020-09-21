@@ -7,7 +7,7 @@ This is an example app demonstrating how to use (and deploy) [Django Channels](h
 
 First, press the Heroku button to deploy the app:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/heroku/channels-example)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mattotodd/channels-example)
 
 Once the app [finishes deploying](Screenshot 2016-03-23 12.23.19.png), press *Manage App*, and turn on the worker dyno by pressing the pencil icon and toggling the **on** switch:
 
